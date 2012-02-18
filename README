@@ -1,17 +1,14 @@
 This is simple program for limiting computer time.
 
-For adding this program, in the prompt(Debian), type the following code:
-
-$ g++ timeCutter.cpp -o timeCutter
-$ sudo cp timeCutter /etc/init.d/timeCutter
-$ sudo cp .timeCutter.conf /root/.timerCutter.conf
-$ cd /etc/init.d/
-$ sudo update-rc.d timeCutter defaults 90
-
-Configuration file .timeCutter must contains time intervals in following format:
+Configuration file timeCutter.conf must contains time intervals in following format:
  hh:mm - hh:mm
 In these time intervals computer can work. 
 For example:
- 6:00 - 9:00
- 20:00 - 23:00
-means that computer can work ONLY from 6am to 9am and from 8pm to 11pm. At at another time computer cann't work.
+	6:00 - 9:00
+	20:00 - 23:00
+- means that computer can work ONLY from 6am to 9am and from 8pm to 11pm. At at another time computer cann't work.
+
+For install this program, in the prompt(Debian), type the following code:
+	make install
+
+
