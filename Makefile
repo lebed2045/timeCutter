@@ -1,3 +1,7 @@
+all:
+	g++ timeCutter.cpp -o timeCutter
+
+
 install:
 	g++ timeCutter.cpp -o timeCutter
 	sudo cp -f timeCutter /etc/init.d/timeCutter
